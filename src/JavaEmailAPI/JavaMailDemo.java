@@ -24,13 +24,13 @@ public class JavaMailDemo {
      props.put("mail.smtp.port", "587");
      
     final String USER_NAME = "aayaan.gautam1999@gmail.com";   //User name of the Goole(gmail) account
-    final String PASSSWORD = "9861941781";  //Password of the Goole(gmail) account
+    final String PASSSWORD = "**********";  //Password of the Goole(gmail) account
     //final String FROM_ADDRESS = "aayaan.gautam1999@gmail.com";  //From addresss
     
     Session session = Session.getInstance(props,
     new javax.mail.Authenticator() {
     protected PasswordAuthentication getPasswordAuthentication() {
-    return new PasswordAuthentication("aayaan.gautam1999@gmail.com", "9861941781");
+    return new PasswordAuthentication("aayaan.gautam1999@gmail.com", "**********");
    }
     });
     Message message = prepareMessage(session,USER_NAME,recepient);
